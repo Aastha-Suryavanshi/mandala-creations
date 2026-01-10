@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mandala Art Store</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #6a1b9a;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  margin: 10px 0;
+  background: rgba(255,255,255,0.15);
+  border-radius: 5px;
+}
+
+.sidebar a:hover {
+  background: white;
+  color: #6a1b9a;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 40px;
+  background: white;
+}
+
+.section {
+  display: none;
+}
+
+.section:target {
+  display: block;
+}
+
+#home {
+  display: block;
+}
+
+h1 {
+  color: #6a1b9a;
+}
+
+/* Products */
+.products {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 230px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  background: #fafafa;
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product button {
+  background: #6a1b9a;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background: #4a148c;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Mandala Art</h2>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#materials">Materials Used</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+
+    <!-- Home -->
+    <div id="home" class="section">
+      <h1>Welcome to Mandala Art Store 🌸</h1>
+      <p>
+        Discover the beauty of <b>handmade mandala drawings</b> created with patience,
+        precision, and creativity. Each artwork reflects calmness, balance,
+        and positive energy.
+      </p>
+      <p>
+        Our mandala artworks are perfect for <b>home decor, meditation spaces,
+        gifting, and personal collections</b>.
+      </p>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="section">
+      <h1>About the Artist</h1>
+      <p>
+        I am a passionate mandala artist who believes that art is a form of
+        meditation and self-expression. Every mandala is carefully hand-drawn,
+        ensuring uniqueness and fine detailing.
+      </p>
+      <p>
+        My goal is to spread peace, creativity, and positivity through
+        meaningful artwork that connects with the soul.
+      </p>
+    </div>
+
+    <!-- Materials -->
+    <div id="materials" class="section">
+      <h1>Materials Used</h1>
+      <p>
+        High-quality materials are used to ensure durability, neat finishing,
+        and professional results.
+      </p>
+      <ul>
+        <li>Premium quality drawing sheets (A4 & A3 size)</li>
+        <li>Fine liner pens (black & colored)</li>
+        <li>Gel pens and micron pens for detailing</li>
+        <li>Compass and scale for symmetry</li>
+        <li>Pencil sketching for base structure</li>
+        <li>Eraser and finishing tools</li>
+      </ul>
+    </div>
+
+    <!-- Gallery -->
+    <div id="gallery" class="section">
+      <h1>Mandala Gallery</h1>
+
+      <div class="products">
+        <div class="product">
+          <img src="tejaswi.jpg" alt="Mandala Art">
+          <h3>Tejaswi Mandala</h3>
+          <p>Inspired by religious beliefs</p>
+          <button>View Details</button>
+        </div>
+
+        <div class="product">
+          <img src="king roar.jpg" alt="Mandala Art">
+          <h3>Lion Mandala</h3>
+          <p>Symbol of power and strength</p>
+          <button>View Details</button>
+        </div>
+
+        <div class="product">
+          <img src="gentle beat.jpg" alt="Mandala Art">
+          <h3>Heart Mandala</h3>
+          <p>Symbol of love and purity</p>
+          <button>View Details</button>
+        </div>
+
+        <div class="product">
+          <img src="eternal time.jpg" alt="Mandala Art">
+          <h3>Watch Mandala</h3>
+          <p>Time and balance in life</p>
+          <button>View Details</button>
+        </div>
+
+        <div class="product">
+          <img src="egypt style.jpg" alt="Mandala Art">
+          <h3>Queen Mandala</h3>
+          <p>Inspired by cultures of egypt</p>
+          <button>View Details</button>
+        </div> 
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <div id="pricing" class="section">
+      <h1>Pricing Details</h1>
+      <ul>
+        <li>A4 Size Mandala Drawing – ₹499</li>
+        <li>A3 Size Mandala Drawing – ₹899</li>
+        <li>Custom Mandala Design – Starting from ₹1200</li>
+      </ul>
+      <p>
+        Custom designs can be made according to your preferred size,
+        pattern, and complexity.
+      </p>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="section">
+      <h1>Contact & Orders</h1>
+      <p><b>Email:</b> suryavanshiaastha1@gmail.com</p>
+      <p><b>WhatsApp:</b> +91XXXXXXXXXX</p>
+      <p><b>Instagram:</b> @soulmandala_aastha</p>
+      <p>
+        For custom orders, bulk purchases, or collaborations,
+        feel free to contact anytime.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
