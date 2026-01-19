@@ -104,7 +104,64 @@ h1 {
 .product button:hover {
   background: #4a148c;
 }
+
+/* Bullet list style: plain circle */
+ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #6a1b9a;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: #6a1b9a;
+  color: white;
+}
+
+/* Centered button */
+.center-button {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.center-button button {
+  background: #6a1b9a;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.center-button button:hover {
+  background: #4a148c;
+}
 </style>
+
+<script>
+// Function to change status bar text
+function showStatus(message) {
+  window.status = message;
+  return true;
+}
+</script>
+
 </head>
 
 <body>
@@ -119,6 +176,7 @@ h1 {
     <a href="#materials">Materials Used</a>
     <a href="#gallery">Gallery</a>
     <a href="#pricing">Pricing</a>
+    <a href="#topics">Topics Table</a>
     <a href="#contact">Contact</a>
   </div>
 
@@ -173,7 +231,6 @@ h1 {
     <!-- Gallery -->
     <div id="gallery" class="section">
       <h1>Mandala Gallery</h1>
-
       <div class="products">
         <div class="product">
           <img src="tejaswi.jpg" alt="Mandala Art">
@@ -206,7 +263,7 @@ h1 {
         <div class="product">
           <img src="egypt style.jpg" alt="Mandala Art">
           <h3>Queen Cleopatra VII</h3>
-          <p>Inspired by cultures of egypt</p>
+          <p>Inspired by cultures of Egypt</p>
           <button>View Details</button>
         </div> 
       </div>
@@ -226,6 +283,43 @@ h1 {
       </p>
     </div>
 
+    <!-- Mandala Topics Table (after Pricing, before Contact) -->
+    <div id="topics" class="section">
+      <h1>Mandala Topics & Pricing</h1>
+      <table>
+        <tr>
+          <th>Mandala Name</th>
+          <th>Theme / Meaning</th>
+          <th>Price (₹)</th>
+        </tr>
+        <tr>
+          <td>Anjaniputra</td>
+          <td>Religious Inspiration</td>
+          <td>499 (A4) / 899 (A3)</td>
+        </tr>
+        <tr>
+          <td>Lion Mandala</td>
+          <td>Power and Strength</td>
+          <td>499 (A4) / 899 (A3)</td>
+        </tr>
+        <tr>
+          <td>Heart Mandala</td>
+          <td>Love and Purity</td>
+          <td>499 (A4) / 899 (A3)</td>
+        </tr>
+        <tr>
+          <td>Watch Mandala</td>
+          <td>Time and Balance</td>
+          <td>499 (A4) / 899 (A3)</td>
+        </tr>
+        <tr>
+          <td>Queen Cleopatra VII</td>
+          <td>Egyptian Culture</td>
+          <td>499 (A4) / 899 (A3)</td>
+        </tr>
+      </table>
+    </div>
+
     <!-- Contact -->
     <div id="contact" class="section">
       <h1>Contact & Orders</h1>
@@ -238,9 +332,17 @@ h1 {
       </p>
     </div>
 
+    <!-- Centered Button -->
+    <div class="center-button">
+      <button 
+        onmouseover="showStatus('Welcome to Mandala Art Store!')" 
+        onmouseout="showStatus('')">
+        Hover Me!
+      </button>
+    </div>
+
   </div>
 </div>
 
 </body>
-
 </html>
