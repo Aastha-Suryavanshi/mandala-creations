@@ -105,13 +105,13 @@ h1 {
   background: #4a148c;
 }
 
-/* Bullet list */
+/* Bullet list style */
 ul {
   list-style-type: circle;
   padding-left: 20px;
 }
 
-/* Table */
+/* Table styling */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -162,6 +162,7 @@ function showStatus(message) {
 </script>
 
 </head>
+
 <body>
 
 <div class="container">
@@ -186,7 +187,12 @@ function showStatus(message) {
       <h1>Welcome to Mandala Art Store 🌸</h1>
       <p>
         Discover the beauty of <b>handmade mandala drawings</b> created with patience,
-        precision, and creativity.
+        precision, and creativity. Each artwork reflects calmness, balance,
+        and positive energy.
+      </p>
+      <p>
+        Our mandala artworks are perfect for <b>home decor, meditation spaces,
+        gifting, and personal collections</b>.
       </p>
     </div>
 
@@ -194,17 +200,30 @@ function showStatus(message) {
     <div id="about" class="section">
       <h1>About the Artist</h1>
       <p>
-        Every mandala is carefully hand-drawn, ensuring uniqueness and fine detailing.
+        I am a passionate mandala artist who believes that art is a form of
+        meditation and self-expression. Every mandala is carefully hand-drawn,
+        ensuring uniqueness and fine detailing.
+      </p>
+      <p>
+        My goal is to spread peace, creativity, and positivity through
+        meaningful artwork that connects with the soul.
       </p>
     </div>
 
     <!-- Materials -->
     <div id="materials" class="section">
       <h1>Materials Used</h1>
+      <p>
+        High-quality materials are used to ensure durability, neat finishing,
+        and professional results.
+      </p>
       <ul>
-        <li>Premium drawing sheets</li>
-        <li>Fine liner pens</li>
-        <li>Compass & scale</li>
+        <li>Premium quality drawing sheets (A4 & A3 size)</li>
+        <li>Fine liner pens (black & colored)</li>
+        <li>Gel pens and micron pens for detailing</li>
+        <li>Compass and scale for symmetry</li>
+        <li>Pencil sketching for base structure</li>
+        <li>Eraser and finishing tools</li>
       </ul>
     </div>
 
@@ -213,8 +232,37 @@ function showStatus(message) {
       <h1>Mandala Gallery</h1>
       <div class="products">
         <div class="product">
-          <img src="tejaswi.jpg">
+          <img src="tejaswi.jpg" alt="Mandala Art">
           <h3>Anjaniputra</h3>
+          <p>Inspired by religious beliefs</p>
+          <button>View Details</button>
+        </div>
+
+        <div class="product">
+          <img src="king roar.jpg" alt="Mandala Art">
+          <h3>Lion Mandala</h3>
+          <p>Symbol of power and strength</p>
+          <button>View Details</button>
+        </div>
+
+        <div class="product">
+          <img src="gentle beat.jpg" alt="Mandala Art">
+          <h3>Heart Mandala</h3>
+          <p>Symbol of love and purity</p>
+          <button>View Details</button>
+        </div>
+
+        <div class="product">
+          <img src="eternal time.jpg" alt="Mandala Art">
+          <h3>Watch Mandala</h3>
+          <p>Time and balance in life</p>
+          <button>View Details</button>
+        </div>
+
+        <div class="product">
+          <img src="egypt style.jpg" alt="Mandala Art">
+          <h3>Queen Cleopatra VII</h3>
+          <p>Inspired by cultures of Egypt</p>
           <button>View Details</button>
         </div>
       </div>
@@ -224,9 +272,14 @@ function showStatus(message) {
     <div id="pricing" class="section">
       <h1>Pricing Details</h1>
       <ul>
-        <li>A4 – ₹499</li>
-        <li>A3 – ₹899</li>
+        <li>A4 Size Mandala Drawing – ₹499</li>
+        <li>A3 Size Mandala Drawing – ₹899</li>
+        <li>Custom Mandala Design – Starting from ₹1200</li>
       </ul>
+      <p>
+        Custom designs can be made according to your preferred size,
+        pattern, and complexity.
+      </p>
     </div>
 
     <!-- Topics Table -->
@@ -234,27 +287,44 @@ function showStatus(message) {
       <h1>Mandala Topics & Pricing</h1>
       <table>
         <tr>
-          <th>Name</th>
-          <th>Theme</th>
-          <th>Price</th>
+          <th>Mandala Name</th>
+          <th>Theme / Meaning</th>
+          <th>Price (₹)</th>
         </tr>
         <tr>
           <td>Anjaniputra</td>
-          <td>Religious</td>
-          <td>₹499 / ₹899</td>
+          <td>Religious Inspiration</td>
+          <td>499 (A4) / 899 (A3)</td>
+        </tr>
+        <tr>
+          <td>Lion Mandala</td>
+          <td>Power and Strength</td>
+          <td>499 (A4) / 899 (A3)</td>
+        </tr>
+        <tr>
+          <td>Heart Mandala</td>
+          <td>Love and Purity</td>
+          <td>499 (A4) / 899 (A3)</td>
+        </tr>
+        <tr>
+          <td>Watch Mandala</td>
+          <td>Time and Balance</td>
+          <td>499 (A4) / 899 (A3)</td>
+        </tr>
+        <tr>
+          <td>Queen Cleopatra VII</td>
+          <td>Egyptian Culture</td>
+          <td>499 (A4) / 899 (A3)</td>
         </tr>
       </table>
     </div>
 
-    <!-- CONTACT WITH FORM (MERGED) -->
+    <!-- Contact (ONLY ADDITION = FORM) -->
     <div id="contact" class="section">
       <h1>Contact & Orders</h1>
-
       <p><b>Email:</b> suryavanshiaastha1@gmail.com</p>
       <p><b>WhatsApp:</b> +91XXXXXXXXXX</p>
       <p><b>Instagram:</b> @soulmandala_aastha</p>
-
-      <h2>Send Your Query</h2>
 
       <form>
         <table>
@@ -280,9 +350,14 @@ function showStatus(message) {
           </tr>
         </table>
       </form>
+
+      <p>
+        For custom orders, bulk purchases, or collaborations,
+        feel free to contact anytime.
+      </p>
     </div>
 
-    <!-- Hover Button -->
+    <!-- Centered Button -->
     <div class="center-button">
       <button onmouseover="showStatus('Welcome to Mandala Art Store!')"
               onmouseout="showStatus('')">
